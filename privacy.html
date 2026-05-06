@@ -51,7 +51,7 @@
 
     <div class="legal__meta">
       <strong>Privacy Policy — Face it! &amp; Mindful Pause</strong><br />
-      Effective date: 4 February 2026
+      Effective date: 6 May 2026
     </div>
 
     <div class="legal__body">
@@ -61,36 +61,217 @@
       </p>
 
       <h2>1. Data We Collect</h2>
+
+      <p>We collect the following categories of data:</p>
+
+      <h3>Account &amp; Identity</h3>
       <ul>
-        <li>Email address (for all sign-in methods).</li>
-        <li>Account information from Google or Apple authentication.</li>
-        <li>Chat conversations and fear-profile data you share with the app.</li>
-        <li>Device information and crash reports for stability and quality.</li>
-        <li>Subscription status, provided through Apple StoreKit.</li>
+        <li>Email address (for all sign-in methods)</li>
+        <li>Apple or Google account information (for sign-in)</li>
+        <li>Anonymous Firebase user ID for users who haven't signed up yet</li>
+      </ul>
+
+      <h3>App Usage &amp; Content (linked to your account)</h3>
+      <ul>
+        <li>Chat conversations with the AI coach</li>
+        <li>
+          Fear profile data you share with the app (core fears, triggers,
+          excuses, avoidance patterns, goals)
+        </li>
+        <li>Reflection journal entries</li>
+        <li>Fear ladder entries and progress (steps, anxiety readings)</li>
+        <li>Mood check-in entries</li>
+        <li>Streaks, completed challenges, breakthrough moments</li>
+      </ul>
+
+      <h3>Voice Messages (Microphone)</h3>
+      <p>
+        When you tap the microphone button to send a voice message, your audio
+        is recorded locally on your device, then transmitted to our servers and
+        forwarded to OpenAI's Whisper API for transcription. The audio is
+        processed in memory only and is <strong>not</strong> retained on our
+        servers after transcription. The resulting text is stored as part of
+        your chat history.
+      </p>
+
+      <h3>Health-Related Data (Sensitive — GDPR Art. 9)</h3>
+      <p>
+        Conversations and profile data inevitably contain references to mental
+        and emotional health. We process this data with explicit consent (see
+        Section 8) and only for the purposes stated below.
+      </p>
+
+      <h3>Subscription &amp; Purchase Data</h3>
+      <ul>
+        <li>Subscription status (active, trialing, expired) provided by Apple StoreKit</li>
+        <li>Product identifiers of subscriptions purchased</li>
+        <li>
+          Used both for unlocking premium features in-app and for measuring
+          marketing-campaign effectiveness (see "Advertising" below)
+        </li>
+      </ul>
+
+      <h3>Marketing Attribution Data</h3>
+      <ul>
+        <li>
+          When you visit getfaceit.com from an advertisement, we record UTM
+          parameters (source, medium, campaign), browser referrer URL,
+          user-agent string, and a randomly-generated session ID.
+        </li>
+        <li>
+          When you install the app via Apple Search Ads, iOS provides an
+          attribution token via the AdServices framework, which we exchange
+          with Apple for campaign metadata.
+        </li>
+        <li>These data points are linked to your user account once you sign up.</li>
+      </ul>
+
+      <h3>Advertising Identifier (with your consent)</h3>
+      <ul>
+        <li>
+          If you grant permission via Apple's App Tracking Transparency prompt,
+          we share your device's advertising identifier (IDFA) with Meta
+          Platforms, Inc. for ad-effectiveness measurement.
+        </li>
+        <li>
+          Without consent, we share aggregated, privacy-preserving conversion
+          data only via Apple's SKAdNetwork.
+        </li>
+      </ul>
+
+      <h3>Technical Data</h3>
+      <ul>
+        <li>Device model, OS version, app version</li>
+        <li>Crash reports and stability diagnostics</li>
       </ul>
 
       <h2>2. How We Use Your Data</h2>
-      <p>
-        We use the data above to deliver personalized coaching, track your
-        progress, and improve the app's performance. We do <strong>not</strong>
-        use your data for advertising or marketing to third parties, and we
-        do <strong>not</strong> sell your personal information.
-      </p>
 
-      <h2>3. Third-Party Services</h2>
-      <p>The app integrates the following providers:</p>
+      <h3>Core App Functionality</h3>
       <ul>
-        <li><strong>Firebase</strong> — authentication and storage (region: europe-west1).</li>
-        <li><strong>OpenAI API</strong> — to power AI-driven conversations.</li>
-        <li><strong>Apple Sign-In</strong> and <strong>Google Sign-In</strong> — authentication.</li>
-        <li><strong>Apple StoreKit</strong> — subscription management.</li>
+        <li>Generate personalised AI coach responses</li>
+        <li>
+          Build and update your fear profile so the coach references your
+          patterns over time
+        </li>
+        <li>Generate fear ladders, daily reflection prompts, push notifications</li>
+        <li>Track your progress, streaks, and breakthrough moments</li>
       </ul>
 
-      <h2>4. Storage &amp; Security</h2>
+      <h3>Crisis Detection (on-device)</h3>
+      <ul>
+        <li>
+          Your typed messages are scanned <strong>locally on your device</strong>
+          for language patterns suggesting a mental-health crisis (e.g.
+          references to self-harm or suicide). This scan never leaves your
+          device.
+        </li>
+        <li>
+          When such language is detected, the app immediately shows you 24/7
+          crisis hotlines and switches the AI's response for that single
+          message to a warm, supportive tone.
+        </li>
+        <li>
+          We do not log which keywords matched. Your message is then transmitted
+          to our AI provider on the same path as any other chat.
+        </li>
+      </ul>
+
+      <h3>Personalised Push Notifications</h3>
+      <ul>
+        <li>
+          We use your conversation history, fear profile, and recurring patterns
+          to generate one personalised daily push notification per user. This is
+          processed via OpenAI on a Firebase Cloud Function.
+        </li>
+        <li>
+          You can disable individual notification categories (or all) anytime
+          in Settings → Notifications.
+        </li>
+      </ul>
+
+      <h3>Marketing &amp; Advertising</h3>
+      <ul>
+        <li>
+          We use Meta Platforms' App Events SDK to measure which ad campaigns
+          drive sign-ups and subscriptions. Events shared with Meta include:
+          app installs, paywall views, free-trial starts, subscription
+          purchases, and product identifiers.
+        </li>
+        <li>
+          This requires your consent via Apple's App Tracking Transparency
+          prompt. You can revoke at any time in iOS Settings → Privacy &amp;
+          Security → Tracking → Face it!.
+        </li>
+        <li>
+          We do <strong>not</strong> sell your personal information. We do
+          share specific events (listed above) with Meta for ad attribution.
+        </li>
+      </ul>
+
+      <h2>3. Third-Party Services / Subprocessors</h2>
       <p>
-        Data is stored on Google Cloud Platform infrastructure in Belgium and
-        transmitted over HTTPS/TLS. Chat history older than 90 days may be
-        automatically archived or deleted.
+        We use the following providers. By using the app you agree to their
+        respective privacy policies.
+      </p>
+
+      <h3>Firebase (Google Ireland Limited)</h3>
+      <ul>
+        <li>Authentication, Firestore database, Cloud Functions, Cloud Messaging</li>
+        <li>Region: europe-west1 (Belgium)</li>
+        <li><a href="https://privacy.google.com" target="_blank" rel="noopener">privacy.google.com</a></li>
+      </ul>
+
+      <h3>OpenAI (OpenAI, L.L.C.)</h3>
+      <ul>
+        <li>AI chat responses (GPT-4o-mini / GPT-4o)</li>
+        <li>Voice transcription (Whisper-1)</li>
+        <li>Pattern analysis (server-side conversation summarisation)</li>
+        <li>
+          Data processing region: United States. By using our app you consent
+          to this transfer under GDPR Standard Contractual Clauses.
+        </li>
+        <li><a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener">openai.com/policies/privacy-policy</a></li>
+      </ul>
+
+      <h3>Apple Inc.</h3>
+      <ul>
+        <li>Apple Sign-In, StoreKit, App Tracking Transparency, AdServices (Apple Search Ads attribution)</li>
+        <li><a href="https://apple.com/legal/privacy" target="_blank" rel="noopener">apple.com/legal/privacy</a></li>
+      </ul>
+
+      <h3>Google LLC</h3>
+      <ul>
+        <li>Google Sign-In</li>
+        <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
+      </ul>
+
+      <h3>Meta Platforms, Inc.</h3>
+      <ul>
+        <li>App Events SDK (advertising measurement, with your consent)</li>
+        <li>
+          Receives: install events, paywall views, trial starts, subscription
+          purchases, IDFA (only with ATT consent)
+        </li>
+        <li><a href="https://www.facebook.com/privacy/policy" target="_blank" rel="noopener">facebook.com/privacy/policy</a></li>
+      </ul>
+
+      <h2>4. Storage &amp; Retention</h2>
+      <p>
+        Data is stored on Google Cloud Platform infrastructure in europe-west1
+        (Belgium) and transmitted over HTTPS/TLS.
+      </p>
+      <p><strong>Retention periods:</strong></p>
+      <ul>
+        <li>Chat history older than 90 days may be automatically archived or deleted.</li>
+        <li>Voice message audio is <strong>not</strong> retained after transcription.</li>
+        <li>Marketing-attribution events are retained up to 24 months for campaign analysis.</li>
+        <li>Crash diagnostics are retained up to 90 days.</li>
+        <li>Account data is deleted within 30 days after you delete your account.</li>
+      </ul>
+      <p>
+        Subprocessors may have their own retention periods. OpenAI retains API
+        request logs for up to 30 days for abuse-monitoring purposes.
       </p>
 
       <h2>5. Your Rights (GDPR)</h2>
@@ -110,6 +291,43 @@
       <p>
         For privacy questions or to exercise your rights, contact us at
         <a href="mailto:sergej@mindcom.io">sergej@mindcom.io</a>.
+      </p>
+
+      <h2>8. Lawful Basis for Processing (GDPR Art. 6 &amp; 9)</h2>
+      <p>
+        <strong>Account &amp; app usage data:</strong> Performance of the
+        contract (Art. 6(1)(b)) between you and us as defined by the Terms of
+        Service.
+      </p>
+      <p>
+        <strong>Health-related sensitive data (Art. 9):</strong> Explicit
+        consent (Art. 9(2)(a)). By signing up and using the app you consent to
+        the processing of mental-health-related content for the purposes
+        described above. You can withdraw consent any time by deleting your
+        account.
+      </p>
+      <p>
+        <strong>Crisis-detection keyword scan:</strong> Vital interest
+        (Art. 6(1)(d)) and explicit consent. The scan happens entirely on your
+        device.
+      </p>
+      <p>
+        <strong>Marketing and attribution:</strong> Consent (Art. 6(1)(a)) via
+        Apple's App Tracking Transparency prompt. You can withdraw at any time
+        without affecting other app functionality.
+      </p>
+      <p>
+        <strong>Crash diagnostics:</strong> Legitimate interest (Art. 6(1)(f))
+        in app stability and quality.
+      </p>
+
+      <h2>9. Minimum Age</h2>
+      <p>
+        Face it is intended for users aged 17 and over. We do not knowingly
+        collect data from users under that age. If you become aware that a
+        person under 17 has provided us with personal data, please contact
+        <a href="mailto:sergej@mindcom.io">sergej@mindcom.io</a> and we will
+        delete it.
       </p>
     </div>
   </div>

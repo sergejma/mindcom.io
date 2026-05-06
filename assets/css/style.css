@@ -378,21 +378,21 @@ button { font: inherit; }
 .avatars {
   display: inline-flex;
 }
-.avatars span {
-  width: 26px; height: 26px;
+.avatars img {
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   border: 2px solid var(--bg);
-  margin-left: -8px;
-  background: linear-gradient(135deg, #2a2a2f, #1a1a1f);
-  position: relative;
-  overflow: hidden;
+  margin-left: -10px;
+  object-fit: cover;
+  object-position: center 25%;
+  background: #1a1a1f;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s var(--ease-out);
 }
-.avatars span:first-child { margin-left: 0; }
-.avatars span:nth-child(1) { background: linear-gradient(135deg, #a7d8ff, #4a7fb8); }
-.avatars span:nth-child(2) { background: linear-gradient(135deg, #d8c2ff, #7a5fb0); }
-.avatars span:nth-child(3) { background: linear-gradient(135deg, #ffd0bd, #b8745a); }
-.avatars span:nth-child(4) { background: linear-gradient(135deg, #b6f0d4, #4a9b7c); }
-.avatars span:nth-child(5) { background: linear-gradient(135deg, #ffe1a8, #b89a4a); }
+.avatars img:first-child { margin-left: 0; }
+.avatars:hover img { transform: translateX(-3px); }
+.avatars:hover img:last-child { transform: translateX(0); }
 
 .hero__scroll {
   position: absolute;

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <radialGradient id="aurora-cyan" cx="22%" cy="18%" r="55%">
+      <stop offset="0%" stop-color="#a7d8ff" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#a7d8ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="aurora-lavender" cx="82%" cy="22%" r="50%">
+      <stop offset="0%" stop-color="#d8c2ff" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#d8c2ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="aurora-peach" cx="55%" cy="85%" r="50%">
+      <stop offset="0%" stop-color="#ffd0bd" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#ffd0bd" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="#08080a"/>
+  <rect width="1080" height="1080" fill="url(#aurora-cyan)"/>
+  <rect width="1080" height="1080" fill="url(#aurora-lavender)"/>
+  <rect width="1080" height="1080" fill="url(#aurora-peach)"/>
+
+  <g transform="translate(540 540)" stroke="#ffffff" stroke-width="20" fill="none">
+    <circle r="180"/>
+    <circle r="320" opacity="0.45"/>
+    <circle r="440" opacity="0.18"/>
+  </g>
+</svg>

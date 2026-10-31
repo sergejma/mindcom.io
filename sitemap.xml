@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://mindcom.io/</loc>
     <changefreq>monthly</changefreq>
@@ -14,5 +15,69 @@
     <loc>https://mindcom.io/privacy-policy</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://mindcom.io/dials/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindcom.io/dials/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mindcom.io/dials/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindcom.io/dials/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://mindcom.io/dials/de/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindcom.io/dials/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mindcom.io/dials/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindcom.io/dials/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://mindcom.io/dials/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindcom.io/dials/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mindcom.io/dials/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindcom.io/dials/privacy/"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://mindcom.io/dials/de/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindcom.io/dials/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mindcom.io/dials/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindcom.io/dials/privacy/"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://mindcom.io/dials/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindcom.io/dials/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mindcom.io/dials/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindcom.io/dials/support/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://mindcom.io/dials/de/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindcom.io/dials/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mindcom.io/dials/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindcom.io/dials/support/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://mindcom.io/dials/imprint/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindcom.io/dials/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mindcom.io/dials/de/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindcom.io/dials/imprint/"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://mindcom.io/dials/de/imprint/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindcom.io/dials/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mindcom.io/dials/de/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindcom.io/dials/imprint/"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
   </url>
 </urlset>

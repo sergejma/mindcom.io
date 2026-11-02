@@ -4,7 +4,7 @@
 
   // App Store link. Leave empty while the app is not live ("Coming soon to the App Store").
   // When the app is live, paste its URL here, for example 'https://apps.apple.com/app/id1234567890'.
-  var APP_STORE_URL = '';
+  var APP_STORE_URL = 'https://apps.apple.com/app/id6829277392';
 
   var doc = document.documentElement;
   window.dialsReady = true;
@@ -16,7 +16,7 @@
   if (APP_STORE_URL) {
     doc.classList.add('is-live');
     document.querySelectorAll('[data-appstore]').forEach(function (a) {
-      a.href = APP_STORE_URL;
+      a.href = de ? APP_STORE_URL.replace('.com/', '.com/de/') : APP_STORE_URL;
       if (a.dataset.live) a.textContent = a.dataset.live;
     });
   }

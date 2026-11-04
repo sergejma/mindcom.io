@@ -17,6 +17,11 @@
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>https://mindcom.io/imprint/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
     <loc>https://mindcom.io/dials/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://mindcom.io/dials/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://mindcom.io/dials/de/"/>

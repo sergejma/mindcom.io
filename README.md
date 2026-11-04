@@ -1,8 +1,9 @@
 # mindcom.io
 
-Marketing site for [mindcom.io](https://mindcom.io) — AI-driven health solutions.
+Company site of mindcom: the apps Face it, Dials and becertain (AEVO Prüfung, 34a Sachkunde).
 
-Static HTML/CSS/JS, deployed via GitHub Pages.
+Plain HTML, CSS and JS with no build step, deployed through GitHub Pages from `main`.
+System font, no external requests. Motion follows Emil Kowalski's skills (github.com/emilkowalski/skills).
 
 ## Local preview
 
@@ -15,21 +16,24 @@ python3 -m http.server 8000
 
 ```
 .
-├── index.html          # home
-├── terms.html          # Terms of Service
-├── privacy.html        # Privacy Policy
+├── index.html            home
+├── privacy-policy/       privacy policy
+├── terms-of-service/     terms of service
+├── imprint/              Impressum
+├── dials/                Dials site with its own CSS and JS
 ├── assets/
-│   ├── css/style.css
-│   └── js/app.js
-├── CNAME               # custom domain (mindcom.io)
-├── .nojekyll           # disable Jekyll processing
+│   ├── css/style.css     home and legal pages
+│   ├── js/app.js         home, progressive enhancement only
+│   ├── apps/             app icons and screenshots
+│   └── logo/             brand exports
+├── CNAME                 custom domain
+├── .nojekyll             disables Jekyll
 ├── robots.txt
 └── sitemap.xml
 ```
 
-## Deployment
+When CSS or JS changes, raise the `?v=` parameter in the HTML files, otherwise browsers and the CDN keep the old file.
 
-Pushes to `main` deploy automatically via GitHub Pages once Pages is enabled
-in repo settings (Source: `main` branch, root). Custom domain `mindcom.io`
-is configured via the `CNAME` file plus the DNS records pointed at GitHub
-Pages IPs.
+## When a becertain app goes live
+
+In `index.html`, section `#becertain`: replace the pill "Coming soon" with "On the App Store" and link the row to the store listing. The 34a row has no link until becertain.app/34a/ is online.
